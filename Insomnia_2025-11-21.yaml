@@ -1,0 +1,317 @@
+type: collection.insomnia.rest/5.0
+name: condominio
+meta:
+  id: wrk_6599ff6847cf483999d5e5c51ad2d82b
+  created: 1763678869948
+  modified: 1763678869948
+collection:
+  - name: condominio
+    meta:
+      id: fld_ccb42fb771764414871ed300bd362efd
+      created: 1763678880802
+      modified: 1763678880802
+      sortKey: -1763678880802
+    children:
+      - url: "{{ _.url }}/casa"
+        name: New Request
+        meta:
+          id: req_afa71afdeb004c88a59ba9550b19a461
+          created: 1763678884022
+          modified: 1763727641223
+          isPrivate: false
+          sortKey: -1763678884023
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+
+              "cep": "06700000",
+              "cidade": "Cotia",
+              "logradouro": "Rua das Flores",
+              "numero": 123,
+              "complemento": "Casa 2",
+              "moradores": [
+                
+                
+              "692059092120a3fc19e54362"
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/casa/692059a08d5fcdcd5304a781"
+        name: pu
+        meta:
+          id: req_b092192e82c9428faeb63b32579ab311
+          created: 1763723517196
+          modified: 1763727876588
+          isPrivate: false
+          sortKey: -1763464132703.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+
+              "cep": "06700000",
+              "cidade": "Cotia",
+              "logradouro": "Rua das Flores",
+              "numero": 123,
+              "complemento": "Casa 33",
+              "moradores": [
+              "692059092120a3fc19e54362"
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/morador/69204e4e96213a31c2600267"
+        name: New Request
+        meta:
+          id: req_903dd483a3344a848c639524b92e48e0
+          created: 1763727115982
+          modified: 1763727117879
+          isPrivate: false
+          sortKey: -1763571508363.25
+        method: DELETE
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: |
+                {
+                  "nome": "Guilherme Rufino",
+                  "cpf": "123.456.789-00",
+                  "data_nascimento": "2002-05-18",
+                  "sexo": "Masculino",
+                  "telefone": "11999999999",
+                  "proprietario_casa": true
+                }
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/casa/"
+        name: New Request
+        meta:
+          id: req_55fc80dc9daf43deb828451fe7d66aec
+          created: 1763727124888
+          modified: 1763777743909
+          isPrivate: false
+          sortKey: -1763625196193.125
+        method: GET
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "nome": "Guilherme Rufino",
+              "cpf": "123.456.789-00",
+              "data_nascimento": "2002-05-18",
+              "sexo": "Masculino",
+              "telefone": "11999999999",
+              "proprietario_casa": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: moradir
+    meta:
+      id: fld_a23b2f2d64f249eca7b4489395ba56eb
+      created: 1763724728908
+      modified: 1763724728908
+      sortKey: -1763724728908
+    children:
+      - url: "{{ _.url }}/morador"
+        name: New Request
+        meta:
+          id: req_38dd5832aead4716804fd60a0311a79b
+          created: 1763724739021
+          modified: 1763724844009
+          isPrivate: false
+          sortKey: -1763724748464
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "nome": "Guilherme Rufino",
+              "cpf": "123.456.789-00",
+              "data_nascimento": "2002-05-18",
+              "sexo": "masculino",
+              "telefone": "11999999999",
+              "proprietario_casa": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/morador/69204e4e96213a31c2600267"
+        name: New Request
+        meta:
+          id: req_5e2bd08941444c338f88a7a733432108
+          created: 1763725126615
+          modified: 1763725160756
+          isPrivate: false
+          sortKey: -1763701816243.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "nome": "Guilherme Rufino",
+              "cpf": "123.456.789-00",
+              "data_nascimento": "2002-05-18",
+              "sexo": "Masculino",
+              "telefone": "11999999999",
+              "proprietario_casa": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/morador/"
+        name: New Request
+        meta:
+          id: req_567726273a55432db2ba577cca05a99e
+          created: 1763725411159
+          modified: 1763778025041
+          isPrivate: false
+          sortKey: -1763690350133.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/morador/69204e4e96213a31c2600267"
+        name: New Request
+        meta:
+          id: req_6779d25ee3a74119aae4584628c58bd4
+          created: 1763725800659
+          modified: 1763725809046
+          isPrivate: false
+          sortKey: -1763696083188.375
+        method: DELETE
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: |
+                {
+                  "nome": "Guilherme Rufino",
+                  "cpf": "123.456.789-00",
+                  "data_nascimento": "2002-05-18",
+                  "sexo": "Masculino",
+                  "telefone": "11999999999",
+                  "proprietario_casa": true
+                }
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.url }}/morador/692059092120a3fc19e54362"
+        name: New Request
+        meta:
+          id: req_8ec681f5096d442aa0abe9dc8e753690
+          created: 1763777989639
+          modified: 1763778065780
+          isPrivate: false
+          sortKey: -1763684617078.125
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_6c8598d69d3515a6ce28e1022dfd5a541f4723b3
+    created: 1763678869993
+    modified: 1763678869993
+environments:
+  name: Base Environment
+  meta:
+    id: env_6c8598d69d3515a6ce28e1022dfd5a541f4723b3
+    created: 1763678869951
+    modified: 1763724794096
+    isPrivate: false
+  data:
+    url: http://localhost:3001
